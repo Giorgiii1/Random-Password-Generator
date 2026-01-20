@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #002339;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container{
+    width: 100%;
+    max-width: 700px;
+    padding: 20px;
+}
+
+img{
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+img:hover{
+    transform: scale(1.1);
+}
+
+.display{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    background: #fff;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 26px 20px;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.container h1{
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 1.2;
+}
+
+.container h1 span{
+    color: #21a8e1;
+    border-bottom: 4px solid #21a8e1;
+    padding-bottom: 7px;
+    display: inline-block;
+}
+
+.display input{
+    border : 0;
+    outline: 0;
+    font-size: 24px;
+    flex: 1;
+    min-width: 200px;
+}
+
+button{
+    width: 100%;
+    background: #21a8e1;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    padding: 12px;
+    font-size: 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    transition: background 0.3s ease;
+}
+
+button:hover{
+    background: #1a8bc2;
+}
+
+button:active{
+    transform: scale(0.98);
+}
+
+@media(max-width: 768px){
+    .container h1{
+        font-size: 36px;
+    }
+
+    .display{
+        padding: 20px 15px;
+        margin-top: 40px;
+        margin-bottom: 25px;
+    }
+
+    .display input{
+        font-size: 18px;
+        min-width: 150px;
+    }
+
+    img{
+        width: 36px;
+        height: 36px;
+    }
+
+    button{
+        font-size: 18px;
+        padding: 10px;
+    }
+}
+
+@media(max-width: 480px){
+    body{
+        padding: 10px;
+    }
+
+    .container{
+        padding: 10px;
+    }
+
+    .container h1{
+        font-size: 28px;
+    }
+
+    .display{
+        padding: 15px 12px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .display input{
+        font-size: 16px;
+        min-width: auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    img{
+        width: 32px;
+        height: 32px;
+        align-self: center;
+    }
+
+    button{
+        font-size: 16px;
+        padding: 10px;
+        margin-top: 10px;
+    }
+}
